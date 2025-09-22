@@ -14,6 +14,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ date, image, title }) => {
           src={image}
           alt={title}
           className="rounded-xl w-full h-48 object-cover"
+          loading="lazy"
         />
         <span className="absolute top-2 left-2 bg-white text-gray-800 text-xs font-semibold px-2 py-1 rounded">
           Published on: {date}
@@ -28,26 +29,26 @@ const LatestNews: React.FC = () => {
   const newsData = [
     {
       date: "17 Feb 2023",
-      image: "https://i.ibb.co/Zx9hmnS/plane-logistics.jpg", // Replace with your local or hosted image
+      image: "logistics.jpg",
       title:
         "Easing Cross-Border Trade And Customs In A Freer World: The African Perspective",
     },
     {
       date: "17 Feb 2023",
-      image: "https://i.ibb.co/8zKw3nX/ship-logistics.jpg", // Replace with your local or hosted image
+      image: "engineers.jpg", 
       title:
         "Easing Cross-Border Trade And Customs In A Freer World: The African Perspective",
     },
     {
       date: "17 Feb 2023",
-      image: "https://i.ibb.co/kJ2dMCP/factory-logistics.jpg", // Replace with your local or hosted image
+      image: "sea.jpg", 
       title:
         "Easing Cross-Border Trade And Customs In A Freer World: The African Perspective",
     },
   ];
 
   return (
-    <section className="py-12 px-6 md:px-16 bg-white">
+    <section className="py-12 px-6 md:px-16 bg-gray-50">
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold text-gray-900">Latest News</h2>
         <p className="mt-3 text-gray-600 max-w-2xl mx-auto">

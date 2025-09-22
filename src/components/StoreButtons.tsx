@@ -2,11 +2,11 @@
 
 export default function StoreButtons() {
   return (
-    <div className="flex flex-col sm:flex-row gap-4 mt-4">
+    <div className="flex flex-col md:flex-row gap-4 mt-4">
       {/* Google Play */}
       <a
         href="#"
-        className="flex items-center gap-3 rounded-lg bg-black px-4 py-2 shadow-lg transition hover:scale-105"
+        className="flex w-[80%] items-center gap-3 rounded-lg bg-black px-4 py-4 shadow-lg transition hover:scale-105"
       >
         {/* Google Play Colored SVG */}
         <svg
@@ -41,7 +41,7 @@ export default function StoreButtons() {
       {/* App Store */}
       <a
         href="#"
-        className="flex items-center gap-3 rounded-lg bg-black px-4 py-2 shadow-lg transition hover:scale-105"
+        className="flex w-[80%] items-center gap-3 rounded-lg bg-black px-4 py-4 shadow-lg transition hover:scale-105"
       >
         {/* Apple Logo (official is monochrome) */}
         <svg

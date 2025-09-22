@@ -35,7 +35,10 @@ const steps = [
 
 export default function ProcessFlow() {
   return (
-    <section className="w-full bg-gray-50 py-16 mt-40 z-500">
+    <section
+      className="w-full bg-gray-50 py-16 md:mt-40 z-500"
+      id="solutions"
+    >
       <div className="max-w-6xl mx-auto px-6 relative">
         {/* SVG Curved Line with Dots */}
         <svg

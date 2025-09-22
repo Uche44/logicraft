@@ -9,14 +9,9 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer
-      className="relative bg-cover bg-center text-gray-800 py-16 px-6 md:px-20"
-      style={{
-        backgroundImage: "url('https://i.ibb.co/vZy5z8W/ship-footer.jpg')",
-      }} // Replace with your ship image
-    >
+    <footer className="relative bg-[url('sea.jpg')] bg-cover bg-center text-white py-16 px-6 md:px-20">
       {/* Overlay for text readability */}
-      <div className="absolute inset-0 bg-white bg-opacity-70"></div>
+      <div className="absolute inset-0 bg-black/40 "></div>
 
       <div className="relative grid grid-cols-1 md:grid-cols-3 gap-12 z-10">
         {/* Connect With Us */}
@@ -27,25 +22,25 @@ const Footer: React.FC = () => {
           <div className="flex items-center gap-4 mb-6">
             <a
               href="#"
-              className="text-gray-800 hover:text-gray-600"
+              className="text-white hover:text-gray-600"
             >
               <FaFacebookF size={20} />
             </a>
             <a
               href="#"
-              className="text-gray-800 hover:text-gray-600"
+              className="text-white hover:text-gray-600"
             >
               <FaInstagram size={20} />
             </a>
             <a
               href="#"
-              className="text-gray-800 hover:text-gray-600"
+              className="text-white hover:text-gray-600"
             >
               <FaPinterestP size={20} />
             </a>
             <a
               href="#"
-              className="text-gray-800 hover:text-gray-600"
+              className="text-white hover:text-gray-600"
             >
               <FaTwitter size={20} />
             </a>
@@ -57,7 +52,7 @@ const Footer: React.FC = () => {
         {/* Menu */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Menu</h3>
-          <ul className="space-y-2 text-gray-700">
+          <ul className="space-y-2 text-white">
             <li>About us</li>
             <li>Live Tracking</li>
             <li>Solutuons</li>
