@@ -6,17 +6,26 @@ import AppDownload from "@/components/AppDownload";
 import LatestNews from "@/components/News";
 import TeamMembers from "@/components/Team";
 import Footer from "@/components/Footer";
+import { useAOSInit } from "@/lib/useAOSInit";
 
 const HomePage = () => {
+  useAOSInit();
   return (
     <section className="w-full min-h-screen flex flex-col items-center">
       <Header />
+
       <Hero />
+
       <Services />
+
       <Progress />
+
       <AppDownload />
+
       <LatestNews />
+
       <TeamMembers />
+
       <Footer />
     </section>
   );

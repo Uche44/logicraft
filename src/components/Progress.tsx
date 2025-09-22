@@ -6,7 +6,10 @@ import { FlowingLogos } from "./ui/flowing-logos";
 const Progress: React.FC = () => {
 
   return (
-    <div className="relative">
+    <div
+      className="relative"
+      data-aos="fade-left"
+    >
       <section className="w-full min-h-screen bg-gray-50  relative px-6 md:px-12">
         <div className="md:flex w-full h-[28rem]">
           <div className="md:w-[40%]">

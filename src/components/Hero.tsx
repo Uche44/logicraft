@@ -6,6 +6,7 @@ const Hero: React.FC = () => {
         md:h-[500px] md:w-[95%] overflow-hidden
         text-white mt-19  md:px-8  relative bg-[url('/sky.jpg')] bg-no-repeat bg-cover bg-center grid place-content-center rounded-[2rem] md:flex items-center
         "
+      data-aos="fade-up"
       id="track-order"
     >
       <div className="absolute z-100 top-0 left-0 w-full h-full bg-black/40"></div>

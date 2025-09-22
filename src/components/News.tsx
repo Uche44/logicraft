@@ -48,7 +48,10 @@ const LatestNews: React.FC = () => {
   ];
 
   return (
-    <section className="py-12 px-6 md:px-16 bg-gray-50">
+    <section
+      className="py-12 px-6 md:px-16 bg-gray-50"
+      data-aos="fade-up"
+    >
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold text-gray-900">Latest News</h2>
         <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
