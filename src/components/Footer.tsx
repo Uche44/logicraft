@@ -9,7 +9,10 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative bg-[url('sea.jpg')] bg-cover bg-center text-white py-16 px-6 md:px-20">
+    <footer
+      className="relative bg-[url('sea.jpg')] bg-cover bg-center text-white py-16 px-6 md:px-20"
+      data-aos="fade-up"
+    >
       {/* Overlay for text readability */}
       <div className="absolute inset-0 bg-black/40 "></div>
 

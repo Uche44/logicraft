@@ -43,7 +43,10 @@ const TeamMembers: React.FC = () => {
   ];
 
   return (
-    <section className="relative h-fit md:h-[38rem] mb-6 w-[95%] md:-z-2 py-12 px-6 md:px-16 bg-gray-50 flex flex-col items-center">
+    <section
+      className="relative h-fit md:h-[38rem] mb-6 w-[95%] md:-z-2 py-12 px-6 md:px-16 bg-gray-50 flex flex-col items-center"
+      data-aos="fade-up"
+    >
       <div className="absolute hidden md:block rounded-[2rem] -z-1 bottom-0 left-0 w-full h-[17rem] bg-blue-500"></div>
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold text-gray-900">

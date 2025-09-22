@@ -20,6 +20,7 @@ const Services: React.FC = () => {
   return (
     <section
       className="w-full h-fit px-6 md:px-12 py-16 bg-gray-50"
+      data-aos="fade-right"
       id="services"
     >
       <h2 className="text-4xl md:text-3xl font-bold text-gray-800 mb-8">
