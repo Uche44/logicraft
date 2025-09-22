@@ -21,8 +21,6 @@ body {
   );
 } */
 
-
-
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -139,4 +137,41 @@ body {
   }
 }
 
+/* .container {
+  clip-path: path(
+    "M 20,0 L 400, 0 L 500, 20 L 500, 200 L 480, 220 L 350, 220 L 330, 240 L 330, 200 L 310, 300 L 20, 300 L 0, 280 L 0, 20 L 20, 0 Z"
+  );
+} */
 
+/* .container {
+  clip-path: path(
+    "M 20,0 L 500, 0 L 500, 20 L 500, 200 L 480, 220 L 350, 220 L 330, 240 L 330, 200 L 310, 300 L 20, 300 L 0, 280 L 0, 20 L 20, 0 Z"
+  );
+} */
+
+/* Horizontal animation */
+@keyframes canopy-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes canopy-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+.canopy-horizontal {
+  animation: canopy-x var(--duration) infinite linear;
+}
+
+.canopy-vertical {
+  animation: canopy-y var(--duration) infinite linear;
+}

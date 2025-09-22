@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 const HomePage = () => {
   return (
-    <section className="w-full min-h-screen px-6">
+    <section className="w-full min-h-screen flex flex-col items-center">
       <Header />
       <Hero />
       <Services />

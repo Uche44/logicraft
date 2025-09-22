@@ -18,7 +18,10 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section className="w-full h-fit px-6 md:px-12 py-16 bg-gray-50">
+    <section
+      className="w-full h-fit px-6 md:px-12 py-16 bg-gray-50"
+      id="services"
+    >
       <h2 className="text-4xl md:text-3xl font-bold text-gray-800 mb-8">
         Our Services
       </h2>
@@ -44,7 +47,7 @@ const Services: React.FC = () => {
         </div>
 
         {/* text */}
-        <div className="md:w-[45%]">
+        <div className="mt-10 md:mt-0 md:w-[45%]">
           <h2 className="text-3xl font-bold mb-4">
             Transport Solutions For Businesses to Solve Any Delivery Problems
           </h2>

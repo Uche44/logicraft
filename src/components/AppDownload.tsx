@@ -3,9 +3,9 @@ import StoreButtons from "./StoreButtons";
 
 const AppDownload: React.FC = () => {
   return (
-    <section className="w- bg-gray-50 mt-8 h-[22rem] px-8 py-4">
-      <div className="w-full h-[19rem] bg-blue-500 rounded-[2rem] flex items-center justify-start">
-        <div className="md:w-[40%] h-fit pl-12">
+    <section className="w-full px-6 bg-gray-50 mt-8 h-[22rem] flex items-center justify-center">
+      <div className="w-full h-fit md:h-[19rem] bg-blue-500 rounded-[2rem] flex items-center justify-start k">
+        <div className="w-full md:w-[40%] py-4 h-fit px-8 md:pl-12">
           <h3 className="text-3xl font-medium text-white flex flex-col">
             Download the free <span className="font-bold ">Logi Craft App</span>
           </h3>
@@ -20,7 +20,8 @@ const AppDownload: React.FC = () => {
         <img
           src="/truck.png"
           alt=""
-          className="right-0 absolute w-[70rem]"
+          className="hidden md:block right-0 absolute w-[70rem]"
+          loading="lazy"
         />
       </div>
     </section>
