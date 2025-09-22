@@ -1,16 +1,16 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { LatLngExpression } from "leaflet";
+import type { LatLngExpression } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-// interface FakeMapProps {
-//   center?: LatLngExpression;
-//   zoom?: number;
-//   height?: string;
-//   width?: string;
-// }
+interface FakeMapProps {
+  center?: LatLngExpression;
+  zoom?: number;
+  height?: string;
+  width?: string;
+}
 
-const FakeMap = ({
+const FakeMap: React.FC<FakeMapProps> = ({
   center = [6.5244, 3.3792],
   zoom = 13,
   height = "400px",
@@ -40,7 +40,7 @@ const FakeMap = ({
       >
         <TileLayer
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png"
-          // @ts-expect-error
+         
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>'
         />
         <Marker position={center}>
