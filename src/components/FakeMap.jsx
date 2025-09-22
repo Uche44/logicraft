@@ -1,16 +1,16 @@
-import type React from "react";
+import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import type { LatLngExpression } from "leaflet";
+import { LatLngExpression } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-interface FakeMapProps {
-  center?: LatLngExpression;
-  zoom?: number;
-  height?: string;
-  width?: string;
-}
+// interface FakeMapProps {
+//   center?: LatLngExpression;
+//   zoom?: number;
+//   height?: string;
+//   width?: string;
+// }
 
-const FakeMap: React.FC<FakeMapProps> = ({
+const FakeMap = ({
   center = [6.5244, 3.3792],
   zoom = 13,
   height = "400px",
@@ -27,7 +27,10 @@ const FakeMap: React.FC<FakeMapProps> = ({
   ];
 
   return (
-    <div className="hidden md:block relative" style={{ height, width }}>
+    <div
+      className="hidden md:block relative"
+      style={{ height, width }}
+    >
       {/* Map */}
       <MapContainer
         center={center}
@@ -36,8 +39,9 @@ const FakeMap: React.FC<FakeMapProps> = ({
         className="z-10"
       >
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>'
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png"
+          // @ts-expect-error
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>'
         />
         <Marker position={center}>
           <Popup>Locate Us @ Lagos</Popup>

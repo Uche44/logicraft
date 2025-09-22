@@ -4,7 +4,6 @@ import ProcessFlow from "./HowWeWork";
 import { FlowingLogos } from "./ui/flowing-logos";
 
 const Progress: React.FC = () => {
-
   return (
     <div
       className="relative"
